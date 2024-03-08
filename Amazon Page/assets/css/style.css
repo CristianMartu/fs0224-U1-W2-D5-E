@@ -1,1 +1,136 @@
 /* Your styles here */
+html {
+  width: 100%;
+  color: #e4e5e3;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 1200px;
+}
+header {
+  background-color: #222f3f;
+}
+header img {
+  width: 10%;
+  margin: 1vh 0 1vh 3vh;
+}
+header menu {
+  background-color: #364769;
+}
+header menu li:first-of-type {
+  margin-left: 3vh;
+}
+header menu li {
+  display: inline-block;
+  margin: 1vh 2vh;
+}
+header menu li a {
+  text-decoration: none;
+  color: #e4e5e3;
+}
+
+main {
+  text-align: center;
+  background-color: #e4e5e3;
+  padding: 3vh;
+}
+main section {
+  margin: 3vh 0;
+}
+main section:first-of-type {
+  margin: 0;
+  margin-bottom: 3vh;
+  background-color: #f56501;
+}
+main section:first-of-type p {
+  padding: 1vh;
+}
+main #gift-section {
+  background-image: url(../images/bg-image.png);
+  background-size: contain;
+}
+main #gift-section div {
+  height: 25vh;
+}
+main #gift-section div h1 {
+  padding: 10vh 1vh 2vh;
+}
+main #gift-section div p {
+}
+main #linegift-section {
+  background-color: white;
+}
+main #linegift-section div:first-of-type {
+  text-align: start;
+  color: black;
+}
+main #linegift-section div:first-of-type p {
+  padding: 2vh 2vh 1vh;
+}
+main #linegift-section div:first-of-type a {
+  color: blue;
+  font-weight: 600;
+  text-decoration: none;
+}
+main #linegift-section img {
+  display: inline-block;
+  width: 23%;
+  height: 42vh;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 1vh;
+  box-shadow: 3px 3px 6px 2px rgba(135, 135, 135, 0.52);
+}
+main section:last-of-type {
+  color: black;
+  margin: 0;
+  margin-top: 3vh;
+}
+main section:last-of-type div {
+  height: 42vh;
+  margin: 1vh 0;
+}
+main section:last-of-type p:first-of-type {
+  margin-bottom: 3vh;
+}
+main section:last-of-type p a {
+  color: blue;
+  font-weight: 600;
+  text-decoration: none;
+}
+main section:last-of-type div:first-of-type {
+  background-image: url(../images/img_9.png);
+  background-size: cover;
+  background-position: center;
+}
+main section:last-of-type div:last-of-type {
+  background-image: url(../images/img_10.png);
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  background-color: #222f3f;
+  text-align: center;
+}
+footer div:first-of-type {
+  background-color: #364769;
+  padding: 1vh;
+}
+footer div:last-of-type {
+  padding: 6vh 0 6vh;
+}
+footer div img {
+  width: 15%;
+}
+footer a {
+  color: #e4e5e3;
+}
+
+h1 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.2rem;
+}
+a {
+  font-size: 1rem;
+}
