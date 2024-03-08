@@ -108,7 +108,7 @@ console.log(justTrims)
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
 for (let i = 0; i < cars.length; i++) {
-  if (cars[i].color[0] === 'b') {
+  if (cars[i].color[0].toLowerCase() === 'b') {
     console.log(cars[i].color, 'Fizz')
   } else {
     console.log(cars[i].color, 'Buzz')
@@ -122,13 +122,19 @@ const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
 ]
 
+const listNumber = []
 let number = 0
-let n = 0
+let position = 0
 while (number !== 32) {
-  number = numericArray[n]
-  n++
+  listNumber.push(numericArray[position])
+  number = numericArray[position]
+  position++
+  if (position >= numericArray.length) {
+    number = 32
+    console.log("32 doesn't exist!")
+  }
 }
-console.log(number)
+console.log(listNumber)
 
 /* ESERCIZIO 10
     Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno
@@ -217,7 +223,7 @@ for (let i = 0; i < charactersArray.length; i++) {
       break
     case 'z':
       pos.push('26')
-
+      break
     default:
       console.log(charactersArray[i], 'Error: is not a letter')
   }
